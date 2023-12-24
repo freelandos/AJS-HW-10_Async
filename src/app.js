@@ -1,10 +1,9 @@
-/* eslint-disable no-console */
-import GameSavingLoader from './GameSavingLoader';
+import GameSavingLoader from './GameSavingLoader.js';
 
 (async () => {
   try {
-    const result = await GameSavingLoader.load();
-    console.log(result);
+    const saving = await GameSavingLoader.load();
+    console.log(saving);
   } catch (error) {
     console.log(error);
   }
